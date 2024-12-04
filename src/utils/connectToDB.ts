@@ -7,7 +7,7 @@ export async function connectToDb() {
       console.log('Using existing connection')
       return
     }
-    const db = await mongoose.connect(process.env.MONGO_SECURE_KEY as string)
+    const db = await mongoose.connect('mongodb+srv://deynao1996:L2QIwPI3mjcV1a1l@cluster0.nnez2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     if (db.connections[0].readyState === 1) {
       console.log('Connection established')
       isConnected = true
