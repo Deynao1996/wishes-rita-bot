@@ -99,7 +99,7 @@ class Bot {
   isGettingMessagesFromContact: boolean
 
   constructor() {
-    this.bot = new TelegramBot('7867163214:AAFMBJeFyIKe1Ny_nkvu14SsfmWSQP_92-Q', { polling: false })
+    this.bot = new TelegramBot('7867163214:AAGtpAkAe1Mt_LKR5B66qPHvor8rrwRrwRE', { polling: true })
     this.chats = {}
     this.user = null
     this.commands = commands
